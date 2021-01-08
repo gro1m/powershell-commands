@@ -1,7 +1,11 @@
 # Some random commands
+```powershell
 docker images | Select-String -Pattern "mcr.microsoft.com"
-https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.1
-https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-powershell-1.0/ee332526(v=msdn.10)
+```
+
+# Some random references
+- https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.1
+- https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-powershell-1.0/ee332526(v=msdn.10)
 
 # Remove from environment variable
 ## Version 1
