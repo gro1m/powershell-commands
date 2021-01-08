@@ -3,3 +3,4 @@ https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/abo
 https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-powershell-1.0/ee332526(v=msdn.10)
 PS C:\Miniconda3> $Remove = 'C:Miniconda3\python.exe'
 PS C:\Miniconda3> $env:Path = ($env:Path.Split(';') | Where-Object -FilterScript {$_ -ne $Remove}) -join ';'
+https://devblogs.microsoft.com/scripting/understanding-the-six-powershell-profiles/
