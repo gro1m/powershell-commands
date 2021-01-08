@@ -5,8 +5,10 @@ https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-powers
 
 # Remove from environment variable
 ## Version 1
+```powershell
 PS C:\Miniconda3> $Remove = 'C:Miniconda3\python.exe'
 PS C:\Miniconda3> $env:Path = ($env:Path.Split(';') | Where-Object -FilterScript {$_ -ne $Remove}) -join ';'
+```
 
 ## Better than Version 1
 # Get it
@@ -31,8 +33,9 @@ https://devblogs.microsoft.com/scripting/understanding-the-six-powershell-profil
 Better Removing 
 
 PowerShell conda profile.ps1
-
+```powershell
 #region conda initialize
 # !! Contents within this block are managed by 'conda init' !!
 (& "C:\ieu\Miniconda3\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
 #endregion
+```
