@@ -6,6 +6,7 @@ docker images | Select-String -Pattern "mcr.microsoft.com"
 # Some random references
 - https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.1
 - https://docs.microsoft.com/en-us/previous-versions/windows/it-pro/windows-powershell-1.0/ee332526(v=msdn.10)
+- https://devblogs.microsoft.com/scripting/understanding-the-six-powershell-profiles/ (PowerShell profiles)
 
 # Remove from environment variable
 ## Version 1
@@ -15,8 +16,8 @@ PS C:\Miniconda3> $env:Path = ($env:Path.Split(';') | Where-Object -FilterScript
 ```
 
 ## Better than Version 1
-# Get it
 ```powershell
+# Get it
 $path = [System.Environment]::GetEnvironmentVariable(
     'PATH',
     'User'
@@ -32,11 +33,8 @@ $path = ($path.Split(';') | Where-Object { $_ -ne 'ValueToRemove' }) -join ';'
 ```
 Reference: https://stackoverflow.com/questions/39010405/powershell-how-to-delete-a-path-in-the-path-environment-variable
 
-https://devblogs.microsoft.com/scripting/understanding-the-six-powershell-profiles/
 
-Better Removing 
-
-PowerShell conda profile.ps1
+# PowerShell conda profile.ps1
 ```powershell
 #region conda initialize
 # !! Contents within this block are managed by 'conda init' !!
