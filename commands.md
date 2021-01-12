@@ -41,3 +41,9 @@ Reference: https://stackoverflow.com/questions/39010405/powershell-how-to-delete
 (& "C:\ieu\Miniconda3\Scripts\conda.exe" "shell.powershell" "hook") | Out-String | Invoke-Expression
 #endregion
 ```
+
+# Reference on PowerShell Here String syntax (multiline strings)
+https://devblogs.microsoft.com/scripting/maximizing-the-power-of-here-string-in-powershell-for-configuration-data/
+
+# Microsoft Docs Reference
+https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/move-item?view=powershell-7.1
