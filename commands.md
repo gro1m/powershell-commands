@@ -47,3 +47,6 @@ https://devblogs.microsoft.com/scripting/maximizing-the-power-of-here-string-in-
 
 # Microsoft Docs Reference
 https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/move-item?view=powershell-7.1
+
+# Delete existing files and folders
+https://gimpland.org/now/2014/02/powershell-test-if-file-exists-and-delete/
